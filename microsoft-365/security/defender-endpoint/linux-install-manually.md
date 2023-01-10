@@ -335,7 +335,8 @@ Download the onboarding package from Microsoft 365 Defender portal.
 1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
 
     > [!NOTE]
-    > Initially the client device is not associated with an organization and the *orgId* attribute is blank.
+    > Initially the client device is not associated with an organization and the *orgId* attribute is blank. Running 'mdatp health -field org_id' 
+    > may report 'No license found' which is common for new installations.
 
     ```bash
     mdatp health --field org_id
